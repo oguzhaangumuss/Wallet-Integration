@@ -21,8 +21,7 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
   });
 }
-// Function to start server and handle port conflicts
 
-const PORT = process.env.PORT || 5025;
+const PORT = process.env.PORT || 5087;
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
